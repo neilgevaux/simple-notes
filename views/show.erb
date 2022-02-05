@@ -1,9 +1,14 @@
-<h1><%= @title %></h1>
-<p><%= @content %></p>
-<div>
-    <a href="/<%= @title %>/edit">Edit this page</a>
-    <form method="post" action="/<%= @title %>">
-        <input type="hidden" name="_method" value="delete">
-        <input type="submit" value="Delete this page">
-    </form>
-</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <h1><%= @title %></h1>
+    <p><%= @content %></p>
+        <div>
+            <a href="/<%= @title %>/edit">Edit this page</a>
+            <form method="post" action="/<%= @title %>">
+                <input type="hidden" name="_method" value="delete">
+                <input type="submit" value="Delete this page">
+            </form>
+        </div>
+    </div><!-- End card body -->
+</div><!-- End card -->
